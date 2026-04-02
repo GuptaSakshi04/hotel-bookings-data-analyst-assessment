@@ -1,37 +1,30 @@
-# 🏨 Hotel Bookings — Data Analyst Technical Assessment
+# Hotel Bookings — Data Analyst Technical Assessment
 
-> **Submitted by:** [Your Name]  
+> **Submitted by:** Sakshi Gupta  
 > **Date:** April 2026  
 > **Dataset:** Hotel Bookings (Kaggle) — 119,390 bookings · 33 columns · 2015–2017  
 > **Tools:** Python · pandas · matplotlib · seaborn · Power BI
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 hotel-bookings-data-analyst-assessment/
 │
-├── README.md                        ← You are here
-├── hotel_bookings.csv               ← Source dataset
-├── hotel_eda_colab.ipynb            ← Full annotated analysis notebook
+├── README.md                              ← You are here
+├── hotel_bookings.csv                     ← Source dataset
+├── Hotel_EDA_SakshiGupta.ipynb            ← Full annotated analysis notebook
 │
 ├── dashboard/
-│   ├── hotel_dashboard.pbix         ← Power BI dashboard file
-│   └── hotel_dashboard.pdf          ← Exported dashboard (no Power BI needed)
+│   ├── hotel_bookings-dashboard.pbix         ← Power BI dashboard file
 │
-└── charts/
-    ├── 01_revenue_by_segment.png
-    ├── 02_leadtime_cancellation.png
-    ├── 03_repeat_guests.png
-    ├── 04_adr_heatmap.png
-    ├── 05_room_mismatch.png
-    └── 06_dashboard.png
+└── charts
 ```
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 Analyse a real-world hotel bookings dataset to identify trends, patterns, and
 actionable business insights that could improve revenue management, reduce
@@ -39,7 +32,7 @@ cancellations, and optimise operations.
 
 ---
 
-## 📊 Dataset Overview
+##  Dataset Overview
 
 | Property | Detail |
 |---|---|
@@ -54,7 +47,7 @@ cancellations, and optimise operations.
 
 ---
 
-## 🔧 Process
+##  Process
 
 ### Step 1 — Data Cleaning
 
@@ -95,7 +88,7 @@ Six new columns were created from existing data:
 
 ---
 
-## 💡 Key Insights
+##  Key Insights
 
 ### Insight 1 — Lead Time Predicts Cancellation
 
@@ -200,20 +193,17 @@ members — turning an operational failure into a retention tool.
 
 ---
 
-## 📈 Dashboard
+##  Dashboard
 
 An interactive Power BI dashboard summarises all five insights in a single
 view with three KPI tiles and four charts.
 
-- Open `dashboard/hotel_dashboard.pbix` in Power BI Desktop to interact with
+- Open `dashboard/hotel_bookings_dashboard.pbix` in Power BI Desktop to interact with
   it — click any bar or segment to cross-filter the entire dashboard instantly
-- Open `dashboard/hotel_dashboard.pdf` to view it without installing Power BI
-
-![Dashboard Preview](charts/06_dashboard.png)
 
 ---
 
-## 🛠️ How to Run the Notebook
+##  How to Run the Notebook
 
 ### Requirements
 
@@ -231,37 +221,13 @@ jupyter notebook hotel_eda_colab.ipynb
 
 1. Go to [colab.research.google.com](https://colab.research.google.com)
 2. Click **File → Upload notebook**
-3. Upload `hotel_eda_colab.ipynb`
+3. Upload `Hotel_EDA_SakshiGupta.ipynb`
 4. Run Cell 2 to upload `hotel_bookings.csv` via the file picker
 5. Click **Runtime → Run all**
 
----
 
-## 📦 Notebook Contents
 
-| Cell | Topic |
-|---|---|
-| 1 | Imports and colour palette setup |
-| 2 | Dataset upload (Google Colab file picker) |
-| 3 – 5 | First look — head, tail, info |
-| 6 | Statistical summary of numeric columns |
-| 7 | Missing value analysis with chart |
-| 8 | Data cleaning — all fixes with before/after counts |
-| 9 | Feature engineering — 6 new columns |
-| 10 – 11 | Univariate analysis — histograms and box plots |
-| 12 | Categorical distributions — bar charts and pie chart |
-| 13 | Bivariate analysis — cancellation rate by 4 categories |
-| 14 | Insight 1 — Lead time vs cancellation (dual-axis chart) |
-| 15 | Insight 2 — Revenue by market segment |
-| 16 | Insight 3 — Repeat guest loyalty comparison |
-| 17 | Insight 4 — Seasonal ADR heatmap and line chart |
-| 18 | Insight 5 — Room assignment mismatch analysis |
-| 19 | Correlation heatmap ranked by strength vs is_canceled |
-| 20 | Executive dashboard — KPI tiles + 4 charts |
-
----
-
-## 🔑 Summary of Findings
+##  Summary of Findings
 
 - **37.1%** of all bookings are cancelled — the single biggest revenue risk
 - **Lead time** is the strongest cancellation predictor (+0.29 correlation):
@@ -277,7 +243,7 @@ jupyter notebook hotel_eda_colab.ipynb
 
 ---
 
-## 🧰 Tools Used
+##  Tools Used
 
 | Tool | Purpose |
 |---|---|
@@ -292,6 +258,4 @@ jupyter notebook hotel_eda_colab.ipynb
 
 ---
 
-*This analysis was completed as part of a Data Analyst technical assessment.
-All code is original and fully reproducible from the raw dataset using only
-the cells in `hotel_eda_colab.ipynb`.*
+
